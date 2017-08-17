@@ -1,0 +1,16 @@
+def main():
+    name = input("What is your name? ")
+    print("Nice to meet you " +name+ "!")
+    color = input("What is your favorite color? ")
+    print(color+"? " + "That's a nice color"+".")
+    food = input("What is your favorite food? ")
+    print(food + " sounds yummy"+"!")
+    answer = input('Do you have to go?(y/n):')
+    if answer.lower().startswith("n"):
+        print("Ok, you may continue.")
+        main()
+    elif answer.lower().startswith("y"):
+      print("See ya!")
+      exit()
+main()
+
